@@ -1,0 +1,52 @@
+.centerbody{
+    background-color: var(--backgroundColor);
+    border: 1px solid #D3D3D3;
+    /* border: 1px solid red; */
+    padding: 1rem;
+    padding-top: 2rem;
+    /* height: 93vh;*/
+    min-width: 60rem; 
+}
+
+.textWorkshop{
+    color: var(--secondarycolor);
+}
+
+.workshopBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconbox{
+    border-radius: 0.7rem;
+    border: 1px solid #F2F2F2;
+    padding: 0.5rem 0.5rem;
+}
+
+.iconbox > *{
+    margin: 0rem 0.5rem;
+}    
+
+.emptyWorkspace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+}
+
+.notePad1{
+    position: relative;
+    color: var(--primarycolor);
+}
+
+
+
+/* Managing Font size */
+.fs1{
+    font-size: 18px;
+}
+
+.fs4{
+    font-size: 22px;
+}

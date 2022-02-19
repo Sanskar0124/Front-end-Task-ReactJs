@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+
+
+    <style>
+        * {
+            list-style-type: none;
+            text-decoration: none;
+            outline: none;
+            border: none;
+
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            /* height: 100vh; */
+        }
+        body{
+            height: 100vh;
+        }
+        #app{
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar{
+            background-color: antiquewhite;
+            padding: .5rem 0;
+        }
+        .navbar li a {
+            color: black;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        .view.container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1.3fr 3fr 1.3fr;
+            transition: .5s ease-in-out;
+        }
+        .item{
+            border: 2px solid black;
+        }
+        .view.container span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .side-link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .side-link ul{
+            display: inline;
+        }
+        main.item{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 570px){
+            .view.container{
+                grid-template-rows: 1fr 3fr 1.3fr;   
+                grid-template-columns: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+
+        const App = () => {
+            return (
+                <React.Fragment>
+                    <Navbar vLink={["./index.html", "./props.html", "./state.html"]} />
+                    <View />
+                </React.Fragment>
+            )
+        }
+        const Navbar = (props) => {
+            return (
+                <div class="navbar container">
+                    <ul navbar>
+                        <li><a href={props.vLink[0]}>Main</a></li>
+                        <li><a href={props.vLink[1]}>Home</a></li>
+                        <li><a href={props.vLink[2]}>About</a></li>
+                    </ul>
+                </div>
+            )
+        }
+        const View = () => {
+            const Link = ReactRouterDOM.Link;
+            const Route = ReactRouterDOM.Route;
+            return (
+                <div class="view container">
+                    <div class="item">
+                        <div class="side-link">
+                            <ReactRouterDOM.HashRouter>
+                                <ul>
+                                    <li><Link to="/">HOME</Link></li>
+                                    <li><Link to="/about">About</Link></li>
+                                </ul>
+                            </ReactRouterDOM.HashRouter>
+                        </div>
+                    </div>
+                    <main class="item">
+                        <ReactRouterDOM.HashRouter>
+                            <Route path="/" exact component={Home} />
+                            <Route path="/about" component={About} />
+                        </ReactRouterDOM.HashRouter>
+                    </main>
+                    <div class="item"><span>side div</span></div>
+                </div>
+            )
+        }
+        const Home = ()=>{
+            return(
+                <div class="view">Home</div>
+            )
+        }
+        const About = ()=>{
+            return(
+                <div class="view">About</div>
+            )
+        }
+        const appRoot = document.getElementById('app');
+        // ReactDOM.render(< App />, appRoot);
+        ReactDOM.render( < App /> , appRoot);
+    </script>
+</body>
+
+</html>

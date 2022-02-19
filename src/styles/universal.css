@@ -1,0 +1,36 @@
+/* Used in all components*/
+
+
+/* .lightgrey{
+    color : #6F8C94;
+}
+
+.primarycolor{
+    color: #41BCC3;
+}
+
+.secondrycolor{
+    color: #08464B;
+} */
+
+
+
+/* Margin CSS*/
+.my1{
+    margin: 0.5rem 0rem;
+}
+
+.ml1{
+    margin-left: 1rem;
+}
+
+.mr1{
+    margin-right: 1rem;
+}
+.mt1{
+    margin-top: 1rem;
+}
+
+.pt25{
+    padding-top: 2.5rem;
+}

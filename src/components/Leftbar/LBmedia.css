@@ -1,0 +1,20 @@
+@media only screen and (max-width: 1543px) {
+    .leftbar{
+        background-color: red;
+        min-width: 15rem;
+    }
+
+    .fs1{
+        font-size: 16px;
+    }
+    
+    .fs2{
+        font-size: 19px;
+    }
+    
+    .fsh3{
+        font-size: 20px;
+    }
+
+
+  }

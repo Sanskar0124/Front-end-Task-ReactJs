@@ -1,0 +1,133 @@
+.leftbar{
+    background-color: var(--backgroundColor);
+    border: 1px solid #D3D3D3;
+    color: #08464B;
+    padding: 1rem;
+    padding-top: 2rem;
+    /* height: 93vh; */
+    min-width: 24rem;
+}
+
+.pvicon{
+    margin-left: 3rem;
+}
+
+.textpresident{
+    margin: 0.5rem 0rem;
+    color: var(--lightgrey);
+}
+
+.ringoverbox{
+    margin: 0.5rem 0rem;
+    color: var(--secondarycolor)
+}
+
+.slash{
+    margin: 1rem;
+}
+
+.ringoverlink a{
+    text-decoration: none;
+}
+
+.ringoveremail{
+    color: var(--primarycolor);
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem;
+}
+
+.linebreak1{
+    border: 1px solid #E4E5E9;
+    margin-top: 2rem;
+}
+
+.linebreak2{
+    border: 1px solid #E4E5E9;
+    margin-bottom: 2rem;
+}
+
+.socialicons > *{
+    margin: 0rem 0.5rem;
+}
+
+.topics{
+    padding: 1rem 0;
+    color: var(--secondarycolor);
+}
+
+.topics > *{
+    border: 1px solid #08464B;
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.socialicons2{
+    margin-right: 1rem;
+}
+
+.socialicons2 span{
+    margin-bottom: 1rem;
+}
+
+
+
+.contacts{
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.contacts li{
+    padding: .2rem 0;
+}
+
+.primarytext{
+    display: inline-block;
+    font-size: 13px;
+    color: #ED4E75;
+}
+
+.menubar{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.circle_call{
+    display: inline-block;
+}
+
+.menus{
+    display: flex;
+    border: 1px solid #41BCC3;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.menus > *{
+    margin: 1.3rem;
+}
+
+
+
+
+
+
+/* Managing Font size */
+.fs1{
+    font-size: 18px;
+}
+
+.fs2{
+    font-size: 21px;
+}
+
+.fsh3{
+    font-size: 22px;
+}

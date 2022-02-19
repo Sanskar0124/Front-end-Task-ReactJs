@@ -1,0 +1,78 @@
+.rightBar{
+    /* border: 1px solid #d210ec; */
+    border: 1px solid #D3D3D3;
+    background-color: var(--backgroundColor);
+    /* height: 93vh;*/
+    min-width: 15rem; 
+}
+
+
+/* Right Top CSS */
+.rightTop{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.saleforce{
+    display: flex;
+    background-color: var(--primarycolor);
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.7rem;
+}
+
+.saleforce > *{
+    margin: 0rem 0.3rem;
+}
+
+.textSaleforce{
+    color: #FFFFFF;
+}
+
+.pauseStopIcons{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #E4E5E9;
+    border-radius: 0.7rem;
+}
+
+.pauseStopIcons > *{
+    margin: 0rem 0.5rem;
+}
+
+.topBottomDivision{
+    border: 1px solid #E4E5E9;
+    margin: 1rem 0rem;
+}
+
+
+/* Right Bottom CSS */
+.rightBottom{
+    padding: 0rem 1rem;
+}
+
+.menuBar{
+    display: flex;
+    border: 1px solid #E4E5E9;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.menu{
+    color: var(--secondarycolor);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.menu:hover{
+    background-color: var(--secondarycolor);
+    color: #FFFFFF;
+}
+
+.selected{
+    background-color: var(--secondarycolor);
+    color: #FFFFFF;
+}
+

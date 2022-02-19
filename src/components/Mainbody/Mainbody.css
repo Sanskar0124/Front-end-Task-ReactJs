@@ -1,0 +1,11 @@
+.mainbody{
+    background-color: blueviolet;
+    /* height: 100vh; */
+}
+
+.contentWrapper{
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 1.5fr;
+}
+
+
