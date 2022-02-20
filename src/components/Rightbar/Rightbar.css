@@ -73,7 +73,7 @@
     color: #FFFFFF;
 }
 
-.selected{
+.active{
     background-color: var(--secondarycolor);
     color: #FFFFFF;
 }

@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
   Link
-} from "react-router-dom";
+} from "react-router-dom"; 
 
 import Activity from './Activity/Activity';
 import Task from './Task/Task';
@@ -17,6 +17,15 @@ import { MdFileUpload, MdStop } from "react-icons/md";
 import { IoIosPause } from "react-icons/io";
 
 export default function Rightbar() {
+  const menubar = document.querySelectorAll(".menu")
+  console.log(menubar)
+  menubar.forEach(element => {
+    element.addEventListener("click", function(){
+      menubar.forEach(nav=>nav.classList.remove("active"))
+      this.classList.add("active")
+    })
+  })
+
   return (
     <Router>
     <div className="rightBar">
