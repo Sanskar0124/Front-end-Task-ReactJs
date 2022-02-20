@@ -11,14 +11,16 @@
 .rightTop{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .saleforce{
     display: flex;
     background-color: var(--primarycolor);
-    padding: 0.6rem 1.5rem;
+    padding: 0.4rem 1.2rem;
     border-radius: 0.7rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .saleforce > *{
@@ -49,20 +51,20 @@
 
 /* Right Bottom CSS */
 .rightBottom{
-    padding: 0rem 1rem;
+    padding: 0rem 0.6rem;
 }
 
 .menuBar{
     display: flex;
     border: 1px solid #E4E5E9;
     justify-content: space-evenly;
-    border-radius: 0.5rem;
-    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.5rem;
 }
 
 .menu{
     color: var(--secondarycolor);
-    padding: 0.5rem 1.5rem;
+    padding: 0.3rem 1.3rem;
     border-radius: 0.5rem;
 }
 

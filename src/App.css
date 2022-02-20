@@ -1,3 +1,8 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -39,17 +44,86 @@
 
 
 /* Added by me */
+html{
+    height: 100vh;
+  }
+
 .container{
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  /* height: 100vh; */
 }
 
-.lbar{
-  flex-grow: 1;
+.inline{
+  display: inline-block;
 }
-.mcon{
-  flex-grow: 6;
+
+:root {
+  --primarycolor: #41BCC3;
+  --secondarycolor: #08464B;
+  --lightgrey: #6F8C94;
+  --backgroundColor: #FFFFFF;
 }
-.rbar{
-  flex-grow: 1;
+
+.my1{
+  margin: 0.5rem 0rem;
+}
+
+.ml1{
+  margin-left: 1rem;
+}
+
+.mr1{
+  margin-right: 1rem;
+}
+.mt1{
+  margin-top: 1rem;
+}
+
+.pt25{
+  padding-top: 1.5rem;
+} 
+
+
+/* Managing Font size */
+.fs1{
+  font-size: 14px;
+}
+
+.fs2{
+  font-size: 16px;
+}
+
+.fsh3{
+  font-size: 17px;
+}
+
+/* Managing Font size */
+
+.fs4{
+  font-size: 22px;
+}
+
+
+
+/* Media Queries for navbar */
+@media only screen and (max-width: 1330) {
+  .leftbar{
+      background-color: red;
+      min-width: 15rem;
+  }
+
+  .fs1{
+      font-size: 16px;
+  }
+  
+  .fs2{
+      font-size: 19px;
+  }
+  
+  .fsh3{
+      font-size: 20px;
+  }
+
+
 }

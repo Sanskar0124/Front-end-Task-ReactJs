@@ -3,22 +3,21 @@
     border: 1px solid #D3D3D3;
     color: #08464B;
     padding: 1rem;
-    padding-top: 2rem;
     /* height: 93vh; */
-    min-width: 24rem;
+    /* min-width: 24rem; */
 }
 
 .pvicon{
-    margin-left: 3rem;
+    margin-left: 1.9rem;
 }
 
 .textpresident{
-    margin: 0.5rem 0rem;
+    margin: 0.2rem 0rem;
     color: var(--lightgrey);
 }
 
 .ringoverbox{
-    margin: 0.5rem 0rem;
+    margin: 0.2rem 0rem;
     color: var(--secondarycolor)
 }
 
@@ -42,12 +41,12 @@
 
 .linebreak1{
     border: 1px solid #E4E5E9;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .linebreak2{
     border: 1px solid #E4E5E9;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .socialicons > *{
@@ -62,8 +61,8 @@
 .topics > *{
     border: 1px solid #08464B;
     margin-right: 0.5rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 0.5rem;
+    padding: 0.1rem 0.8rem;
+    border-radius: 0.3rem;
 }
 
 .socialicons2{
@@ -78,7 +77,7 @@
 
 .contacts{
     list-style: none;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .contacts li{
@@ -92,7 +91,7 @@
 }
 
 .menubar{
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
 }
@@ -111,7 +110,83 @@
 }
 
 .menus > *{
-    margin: 1.3rem;
+    margin: 1rem;
+}
+
+
+/* Modal Specific  */
+.modal-open{
+    color: #41BCC3;
+    outline: none;
+    border: none;
+}
+.modal-open:hover{
+    color: var(--secondarycolor);
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+}
+
+.modal-content{
+    background: #fff;
+    margin-top: 100px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+}
+
+.modal-header{
+    font-weight: 500;
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+.modal-header .modal-close{
+    float: right;
+    font-size: 20px;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+.modal-body{
+    color: #302c2c;
+    padding: 15px 0;
+}
+
+.modal-footer{
+    padding: 15px 0;
+}
+
+.modal-footer .modal-close{
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #1a73e8;
+}
+
+@keyframes modal-open{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1
+    }
 }
 
 
@@ -119,15 +194,4 @@
 
 
 
-/* Managing Font size */
-.fs1{
-    font-size: 18px;
-}
 
-.fs2{
-    font-size: 21px;
-}
-
-.fsh3{
-    font-size: 22px;
-}

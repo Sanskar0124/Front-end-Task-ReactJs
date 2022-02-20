@@ -3,7 +3,6 @@
     border: 1px solid #D3D3D3;
     /* border: 1px solid red; */
     padding: 1rem;
-    padding-top: 2rem;
     /* height: 93vh;*/
     min-width: 60rem; 
 }
@@ -32,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 85%;
+    height: 93%;
 }
 
 .notePad1{
@@ -42,11 +41,3 @@
 
 
 
-/* Managing Font size */
-.fs1{
-    font-size: 18px;
-}
-
-.fs4{
-    font-size: 22px;
-}

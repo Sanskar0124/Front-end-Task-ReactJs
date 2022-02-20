@@ -13,7 +13,7 @@ export default function Centerbody() {
       <div className="workshopBox">
         <h3 className="textWorkshop fsh3">Workspace</h3>
         <div className='iconbox'>
-          <IconContext.Provider value={{ size: "1.5rem", color: "#41BCC3"}}>
+          <IconContext.Provider value={{ size: "1.2rem", color: "#41BCC3"}}>
           <BsFillPersonLinesFill/>
           <MdInsertDriveFile/>
           </IconContext.Provider>
@@ -21,7 +21,7 @@ export default function Centerbody() {
       </div>
       <div className="emptyWorkspace">
         <div className="emptyWorkspaceIcons">
-        <IconContext.Provider value={{ size: "12rem"}}>
+        <IconContext.Provider value={{ size: "8rem"}}>
         <span className='notePad1'><BiTaskX/></span>
         
         </IconContext.Provider>

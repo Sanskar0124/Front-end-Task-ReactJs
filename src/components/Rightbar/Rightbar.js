@@ -26,8 +26,8 @@ export default function Rightbar() {
           <p className='textSaleforce fs1'><b>Salesforce</b></p>
         </div>
         <div className="pauseStopIcons">
-          <IoIosPause size="2rem" color='#41BCC3'/>
-          <MdStop size="2rem" color='#EF525E'/>
+          <IoIosPause size="1.5rem" color='#41BCC3'/>
+          <MdStop size="1.5rem" color='#EF525E'/>
         </div>
       </div>
 

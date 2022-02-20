@@ -1,6 +1,6 @@
 .navigation{
     display: grid;
-    height: 4rem;
+    height: 3.5rem;
     background-color: #08262E;
     grid-template-columns: 1.5fr 5fr 1.5fr;
 }
@@ -18,7 +18,7 @@
 
 .webName{
     color: #ECECEC;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .centerNav{
@@ -28,19 +28,18 @@
 }
 
 .sInput{
-    height: 2rem;
-    padding: 1rem;
-    width: 40rem;
-    border-radius: 5px;
+    padding: 0.3rem 1rem;
+    width: 36rem;
+    border-radius: 0.5rem;
     background-color: #203E46;
     position: relative;
-    font-size: 18px;
+    font-size: 14px;
     color: #F1F2F4;
 }
 
 .searchLogo{
     position: absolute;
-    margin-left: 37rem;
+    margin-left: 33rem;
     color: #BFBFBF;
 }
 

@@ -1,32 +1,59 @@
 import React from 'react'
 import "./Leftbar.css"
 import "./LBmedia.css"
-import "../../styles/universal.css"
 
 // Icons Specific
 import { IconContext } from "react-icons";
-import {MdCreate, MdVerifiedUser, MdPeopleAlt, MdTranslate, MdLink, MdLanguage, MdSms} from "react-icons/md";
+import {MdCreate, MdVerifiedUser, MdPeopleAlt, MdTranslate, MdLink, MdLanguage, MdSms, MdOutlineCancel} from "react-icons/md";
 import {IoLogoLinkedin, IoIosCloud, IoMdMail, IoIosCall, IoIosCheckmarkCircle} from "react-icons/io";
 import {SiGooglemeet} from "react-icons/si";
 import {BsCalendarEvent} from "react-icons/bs";
 
 export default function Leftbar() {
+  // Getting modal openning buttons
+  var modalBtns = document.querySelectorAll('.modal-open');
+  modalBtns.forEach(function(btn){
+    // console.log(btn)
+    btn.onclick = function(){
+      console.log(btn)
+      // console.log("clicked")
+      var modal = btn.getAttribute('data-modal');
+      console.log(modal)
+      document.getElementById(modal).style.display = "block";
+    }
+  })
+
+  var closeBtns = document.querySelectorAll(".modal-close");
+  closeBtns.forEach(function(btn){
+    btn.onclick = function(){
+      btn.closest('.modal').style.display = 'none'
+    }
+    })
+
+
+  window.onclick = function(e){
+    if(e.target.className === 'modal'){
+      e.target.style.display = 'none';
+    }
+  }
+
+
   return (
     <div className="leftbar">
       <div className="pname">
-        <IconContext.Provider value={{ color: "#08464B", size: "1.5rem"}}><h3 className='inline fsh3'>Jean-Samuel Najnudel</h3> <span className='pvicon'><MdCreate /> <MdVerifiedUser /> </span>  </IconContext.Provider>
+        <IconContext.Provider value={{ color: "#08464B", size: "1.1rem"}}><h3 className='inline fsh3'>Jean-Samuel Najnudel</h3> <span className='pvicon'><MdCreate /> <MdVerifiedUser /> </span>  </IconContext.Provider>
       </div>
 
       <p className='lightgrey textpresident fs1'>President</p>
       <div className=" fs1 ringoverbox">
         <p className='inline'>Ringover</p> 
-        <span className='inline' className="slash"><b>|</b></span>
-        <span className="people"><MdPeopleAlt size="1.2rem" color="#08464B"/> 101-250</span>
+        <span className='inline slash'><b>|</b></span>
+        <span className="people"><MdPeopleAlt size="0.8rem" color="#08464B"/> 101-250</span>
         <div><a className="ringoveremail" href="www.ringover.com">http:/www.ringover.com</a></div>
       </div>
 
       <hr className='linebreak1'/>
-      <IconContext.Provider value={{ color: "#41BCC3", size: "2rem"}}><span className='socialicons'><IoLogoLinkedin/>  <IoIosCloud/></span></IconContext.Provider>
+      <IconContext.Provider value={{ color: "#41BCC3", size: "1.8rem"}}><span className='socialicons'><IoLogoLinkedin/>  <IoIosCloud/></span></IconContext.Provider>
       <hr className='linebreak2'/>
 
       <p className="secondarycolor fs2"><b>Topis</b></p>
@@ -57,19 +84,52 @@ export default function Leftbar() {
     </ol>
 
     <div className="menubar">
-      <div className="circle_call"><IoIosCheckmarkCircle size="4rem" color="#41BCC3"/></div>
+      <div className="circle_call"><IoIosCheckmarkCircle size="3rem" color="#41BCC3"/></div>
       <div className="menus">
-      <IconContext.Provider value={{size:"1.5rem", color: "#41BCC3"}}>
-        <SiGooglemeet/>
-        <BsCalendarEvent/>
-        <IoMdMail/>
-        <MdSms/>
+        {/* Modal Buttons */}
+      <IconContext.Provider value={{size:"1rem"}}>
+      <button className="modal-open" data-modal="modal1"><SiGooglemeet/></button>
+      <button className="modal-open" data-modal="modal2" ><BsCalendarEvent/></button>
+      <button className="modal-open" data-modal="modal3"><IoMdMail/></button>
+      <button className="modal-open" data-modal="modal4"><MdSms/></button>
       </IconContext.Provider>
       </div>
     </div>
 
-    
-
+    {/* Modals */}
+     {/* The Modal 1 */}
+    <div className="modal" id="modal1">
+      <div className="modal-content">
+        <div className="modal-header">Modal 1 <button className="icon modal-close"><i className="material-icons"><MdOutlineCancel size="1.5rem" color="#1a73e8"/></i></button></div>
+        <div className="modal-body">Model1..................</div>
+        <div className="modal-footer"><button className="link modal-close">Close Modal</button></div>
+      </div>
     </div>
+     {/* The Modal 2 */}
+    <div className="modal" id="modal2">
+      <div className="modal-content">
+        <div className="modal-header">Modal 2 <button className="icon modal-close"><i className="material-icons"><MdOutlineCancel size="1.5rem" color="#1a73e8"/></i></button></div>
+        <div className="modal-body">Model2..................</div>
+        <div className="modal-footer"><button className="link modal-close">Close Modal</button></div>
+      </div>
+    </div>
+     {/* The Modal 3 */}
+    <div className="modal" id="modal3">
+      <div className="modal-content">
+        <div className="modal-header">Modal 3 <button className="icon modal-close"><i className="material-icons"><MdOutlineCancel size="1.5rem" color="#1a73e8"/></i></button></div>
+        <div className="modal-body">Model3..................</div>
+        <div className="modal-footer"><button className="link modal-close">Close Modal</button></div>
+      </div>
+    </div>
+     {/* The Modal 4 */}
+    <div className="modal" id="modal4">
+      <div className="modal-content">
+        <div className="modal-header">Modal 4 <button className="icon modal-close"><i className="material-icons"><MdOutlineCancel size="1.5rem" color="#1a73e8"/></i></button></div>
+        <div className="modal-body">Model4..................</div>
+        <div className="modal-footer"><button className="link modal-close">Close Modal</button></div>
+      </div>
+    </div>
+
+  </div>
   )
 }

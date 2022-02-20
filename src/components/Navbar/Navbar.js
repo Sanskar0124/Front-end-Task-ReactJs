@@ -13,8 +13,8 @@ export default function Navbar() {
   return (
     <div className='navigation'>
         <div className='leftNav'>
-          <a href="#"><span className="logo"><SiCircleci size= "2rem"/></span></a>
-          <a href="#"><p className="webName">Sales machine</p></a>
+          <a href="/"><span className="logo"><SiCircleci size= "1.5rem"/></span></a>
+          <a href="/"><p className="webName">Sales machine</p></a>
         </div>
 
         <div className='centerNav'>
@@ -23,8 +23,8 @@ export default function Navbar() {
         </div>
 
         <div className="rightNav">
-            <a href="#"><span><CgProfile size= "2.5rem" color= "#BFBFBF"/></span></a>
-          <IconContext.Provider value={{ size: "1.5rem", color: "#BFBFBF"}}>
+            <a href="#"><span><CgProfile size= "2rem" color= "#BFBFBF"/></span></a>
+          <IconContext.Provider value={{ size: "1.2rem", color: "#BFBFBF"}}>
             <a href="#"><span><BiTransfer/></span></a>
             <a href="#"><span><IoMdExit/></span></a>
           </IconContext.Provider>
