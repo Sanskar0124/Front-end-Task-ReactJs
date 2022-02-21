@@ -10,34 +10,6 @@ import {SiGooglemeet} from "react-icons/si";
 import {BsCalendarEvent} from "react-icons/bs";
 
 export default function Leftbar() {
-  // Getting modal openning buttons
-  var modalBtns = document.querySelectorAll('.modal-open');
-  modalBtns.forEach(function(btn){
-    // console.log(btn)
-    btn.onclick = function(){
-      console.log(btn)
-      // console.log("clicked")
-      var modal = btn.getAttribute('data-modal');
-      console.log(modal)
-      document.getElementById(modal).style.display = "block";
-    }
-  })
-
-  var closeBtns = document.querySelectorAll(".modal-close");
-  closeBtns.forEach(function(btn){
-    btn.onclick = function(){
-      btn.closest('.modal').style.display = 'none'
-    }
-    })
-
-
-  window.onclick = function(e){
-    if(e.target.className === 'modal'){
-      e.target.style.display = 'none';
-    }
-  }
-
-
   return (
     <div className="leftbar">
       <div className="pname">

@@ -17,15 +17,6 @@ import { MdFileUpload, MdStop } from "react-icons/md";
 import { IoIosPause } from "react-icons/io";
 
 export default function Rightbar() {
-  const menubar = document.querySelectorAll(".menu")
-  console.log(menubar)
-  menubar.forEach(element => {
-    element.addEventListener("click", function(){
-      menubar.forEach(nav=>nav.classList.remove("active"))
-      this.classList.add("active")
-    })
-  })
-
   return (
     <Router>
     <div className="rightBar">
@@ -43,7 +34,7 @@ export default function Rightbar() {
       <hr className='topBottomDivision'/>
 
       <div className="rightBottom">
-        <div className="menuBar">
+        <div id="menuBar">
           <Link to="/activity" className="menu fs1">Activity</Link>
           <Link to="/task" className="menu fs1">Task</Link>
           <Link to="/progress" className="menu fs1">Progress</Link>

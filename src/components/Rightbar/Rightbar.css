@@ -54,7 +54,7 @@
     padding: 0rem 0.6rem;
 }
 
-.menuBar{
+#menuBar{
     display: flex;
     border: 1px solid #E4E5E9;
     justify-content: space-evenly;
