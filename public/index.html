@@ -11,10 +11,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
       function menuActive(){
-        console.log("heyy menuActive")
+        // console.log("heyy menuActive")
         const menubar = document.querySelectorAll(".menu")
-        console.log(document)
-        console.log(menubar)
+        // console.log(document)
+        // console.log(menubar)
         menubar.forEach(element => {
           element.addEventListener("click", function(){
             menubar.forEach(nav=>nav.classList.remove("active"))
@@ -24,15 +24,15 @@
       }
       function modals(){
       // Getting modal openning buttons
-      console.log("Heyy modals")
+      // console.log("Heyy modals")
       var modalBtns = document.querySelectorAll('.modal-open');
       modalBtns.forEach(function(btn){
         // console.log(btn)
         btn.onclick = function(){
-          console.log(btn)
+          // console.log(btn)
           // console.log("clicked")
           var modal = btn.getAttribute('data-modal');
-          console.log(modal)
+          // console.log(modal)
           document.getElementById(modal).style.display = "block";
         }
       })
